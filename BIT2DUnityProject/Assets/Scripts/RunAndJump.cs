@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class RunAndJump: MonoBehaviour {
 
-    private Animator animator;
-    private Rigidbody2D rg2d;
-    public float jumpForce;
-    private int jumpCount;
     public int maxJumpCount;
     public float runSpeed;
-    private int idle;
+    public float jumpForce;
+
+    private Animator animator;
+    private Rigidbody2D rg2d;
+    private int jumpCount;
     private float moveDirection;
+    private bool facingRight = true;
 
 
 
-    // On GameObject awake  
+    // On GameObject awake
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -29,28 +30,32 @@ public class RunAndJump: MonoBehaviour {
     {
         moveDirection = Input.GetAxis("Horizontal");
         rg2d.velocity = new Vector2(moveDirection * runSpeed, rg2d.velocity.y);
-
-        if (rg2d.velocity.x > 0)
-        {
-            animator.SetInteger("personInt", 1);
-            idle = 0;
-        } else if (rg2d.velocity.x < 0)
-        {
-            animator.SetInteger("personInt", 2);
-            idle = 3;
-        }
-
-        if (rg2d.velocity.x == 0)
-        {
-            animator.SetInteger("personInt", idle);
-        }
-
-        // For jump, check for spce key down 
+        Animate();
+        // For jump, check for spce key down
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount )
         {
             rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce), ForceMode2D.Impulse);
             jumpCount++;
         }
+    }
+
+    private void Animate(){
+      if (moveDirection * runSpeed != 0)
+      {
+        animator.SetInteger("personInt", 1);
+        if(moveDirection > 0 && !facingRight)
+        {
+          FlipCharacter();
+        }
+        else if (moveDirection < 0 && facingRight)
+        {
+          FlipCharacter();
+        }
+      }
+      else
+      {
+        animator.SetInteger("personInt", 0);
+      }
     }
 
     // Method for resetting jump counter
@@ -60,5 +65,10 @@ public class RunAndJump: MonoBehaviour {
         {
             jumpCount = 0;
         }
+    }
+
+    private void FlipCharacter(){
+      facingRight = !facingRight; //inverse
+      transform.Rotate(0f, 180f, 0f);
     }
 }
