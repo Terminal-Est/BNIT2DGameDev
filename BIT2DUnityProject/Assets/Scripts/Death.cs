@@ -17,13 +17,18 @@ public class Death : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Fall();
+
+    }
+
+    private void Fall()
+    {
         var player = GameObject.FindGameObjectWithTag("Player");
         if (death)
         {
             player.transform.position = new Vector3(-2.089f, 0.046f, 0.0f);
             death = false;
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

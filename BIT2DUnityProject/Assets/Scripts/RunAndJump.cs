@@ -14,8 +14,6 @@ public class RunAndJump: MonoBehaviour {
     private float moveDirection;
     private bool facingRight = true;
 
-
-
     // On GameObject awake
     void Awake()
     {
@@ -30,16 +28,22 @@ public class RunAndJump: MonoBehaviour {
     {
         moveDirection = Input.GetAxis("Horizontal");
         rg2d.velocity = new Vector2(moveDirection * runSpeed, rg2d.velocity.y);
-        Animate();
-        // For jump, check for spce key down
-        if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount )
+        Move();
+        Jump();
+    }
+
+    // Method For jump, check for jump key down
+    private void Jump()
+    {
+        if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount)
         {
             rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce), ForceMode2D.Impulse);
             jumpCount++;
         }
     }
 
-    private void Animate(){
+    // Method for horizontal movement
+    private void Move(){
       if (moveDirection * runSpeed != 0)
       {
         animator.SetInteger("personInt", 1);
@@ -67,6 +71,7 @@ public class RunAndJump: MonoBehaviour {
         }
     }
 
+    // Method for flipping character animation
     private void FlipCharacter(){
       facingRight = !facingRight; //inverse
       transform.Rotate(0f, 180f, 0f);
