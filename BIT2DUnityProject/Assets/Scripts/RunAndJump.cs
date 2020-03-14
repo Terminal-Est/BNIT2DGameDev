@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class RunAndJump: MonoBehaviour {
 
-    Animator animator;
-    Rigidbody2D rg2d;
-    PolygonCollider2D collide;
-    Vector2 jumpForce;
-    Vector2 runForce;
-    int persInt;
-    bool isGrounded;
-    float vector;
+    private Animator animator;
+    private Rigidbody2D rg2d;
+    private PolygonCollider2D collide;
+    public Vector2 jumpForce;
+    private int jumpCount;
+    public int maxJumpCount;
+    public Vector2 runForce;
+    private int persInt;
+    private bool isGrounded;
+    private float vector;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +22,8 @@ public class RunAndJump: MonoBehaviour {
         rg2d = GetComponent<Rigidbody2D>();
         collide = GetComponent<PolygonCollider2D>();
         isGrounded = true;
-    }   
+        jumpCount = 0;
+    }
 
     // Update is called once per frame
     void Update()
@@ -69,14 +72,15 @@ public class RunAndJump: MonoBehaviour {
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) & isGrounded )
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount < maxJumpCount )
         {
             if (!Input.GetKey(KeyCode.LeftArrow) || !Input.GetKey(KeyCode.RightArrow))
             {
                 vector = 0;
             }
-            jumpForce = new Vector2(vector, 5.0f);
+            //jumpForce = new Vector2(vector, 5.0f);
             rg2d.AddForce(jumpForce, ForceMode2D.Impulse);
+            jumpCount++;
         }
     }
 
@@ -85,6 +89,7 @@ public class RunAndJump: MonoBehaviour {
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
+            jumpCount = 0;
         }
     }
 
@@ -96,6 +101,3 @@ public class RunAndJump: MonoBehaviour {
         }
     }
 }
-
-
-
