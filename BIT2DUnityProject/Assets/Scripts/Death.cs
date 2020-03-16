@@ -5,8 +5,7 @@ using UnityEngine;
 public class Death : MonoBehaviour
 
 {
-
-    bool death;
+    private bool death;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +25,7 @@ public class Death : MonoBehaviour
         var player = GameObject.FindGameObjectWithTag("Player");
         if (death)
         {
-            player.transform.position = new Vector3(-2.089f, 0.046f, 0.0f);
+            player.transform.position = new Vector2(-3.644f, -0.767f);
             death = false;
         }
     }

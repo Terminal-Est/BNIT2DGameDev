@@ -7,6 +7,7 @@ public class RunAndJump: MonoBehaviour {
     public int maxJumpCount;
     public float runSpeed;
     public float jumpForce;
+    public float jumpForceDivider;
 
     private Animator animator;
     private Rigidbody2D rg2d;
@@ -37,7 +38,14 @@ public class RunAndJump: MonoBehaviour {
     {
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount)
         {
-            rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce), ForceMode2D.Impulse);
+            if(jumpCount != 1)
+            {
+              rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce), ForceMode2D.Impulse);
+            }
+            else
+            {
+              rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce/jumpForceDivider), ForceMode2D.Impulse);
+            }
             jumpCount++;
         }
     }
