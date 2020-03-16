@@ -39,6 +39,12 @@ public class CarDrive: MonoBehaviour {
 
     }
 
+    // Fixed update is used for physics calls, this can be more or less than the frame rate
+    private void FixedUpdate()
+    {
+        Steer();
+    }
+
     // Brake method used to set car speed to zero on jump axis equaling 1
     private void Brake()
     {
@@ -52,12 +58,6 @@ public class CarDrive: MonoBehaviour {
             driveSpeed = driveSpeedRetain;
         }
 
-    }
-
-    // Fixed update is used for physics calls, this can be more or less than the fram rate
-    private void FixedUpdate()
-    {
-        Steer();
     }
 
     // Steer method, used to control the X,Y,Z movement of the car
