@@ -350,10 +350,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776848092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3430eae638bac64d84dbcbfc98f5b47, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e16498c5732dd54a8aeb67bb63ba69e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraFollow: {fileID: 0}
+  cameraFollow: {fileID: 409355323}
   playerTransform: {fileID: 241528606}
 --- !u!4 &1776848094
 Transform:
