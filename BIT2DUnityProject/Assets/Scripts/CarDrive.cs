@@ -6,13 +6,14 @@ public class CarDrive: MonoBehaviour {
 
     public float driveSpeed;
     public float turnRate;
-    
+
     private Rigidbody2D rg2d;
     private float driveSpeedRetain;
     private float moveX;
     private float moveY;
     private float steeringRightAngle;
     private float driftForce;
+    private float carVelocity;
     private Vector2 rightAngleFromForward;
     private Vector2 relativeForce;
     private Vector3 move;
@@ -34,14 +35,13 @@ public class CarDrive: MonoBehaviour {
     void Update()
 
     {
-
         Brake();
-
     }
 
     // Fixed update is used for physics calls, this can be more or less than the frame rate
     private void FixedUpdate()
     {
+        carVelocity = rg2d.velocity.magnitude;
         Steer();
     }
 
@@ -100,8 +100,13 @@ public class CarDrive: MonoBehaviour {
             // Apply an opposite force from the drift direction to simulate tire grip
             relativeForce = (rightAngleFromForward.normalized * -1.0f) * (driftForce * 10.0f);
             rg2d.AddForce(rg2d.GetRelativeVector(relativeForce));
-
         }
+    }
+
+    public float getCarVel()
+    {
+        float vel = carVelocity;
+        return vel;
     }
 }
         
