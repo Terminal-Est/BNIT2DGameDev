@@ -64,7 +64,7 @@ Arriving at destination, upon entering, scene will change to side-scroll.
 
 Side scroll
 
-
+(To be written)
 
 --------------------------------------------------------------------------------------------------------
 
