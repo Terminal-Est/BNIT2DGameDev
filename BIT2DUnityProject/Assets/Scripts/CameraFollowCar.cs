@@ -6,9 +6,11 @@ using UnityEngine;
 public class CameraFollowCar : MonoBehaviour
 {
     public CarDrive car;
-    private float carVel;
+
     private Func<Vector3> GetCameraFollowPositionFunc;
-   
+    public float cameraMoveSpeed;
+    private float carVel;
+
     public void Setup(Func<Vector3> GetCameraFollowPositionFunc)
     {
         this.GetCameraFollowPositionFunc = GetCameraFollowPositionFunc;
@@ -18,33 +20,25 @@ public class CameraFollowCar : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Zoom();
+        CarZoom();
         Vector3 cameraFollowPosition = GetCameraFollowPositionFunc();
         cameraFollowPosition.z = transform.position.z;
         Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
         float distance = Vector3.Distance(cameraFollowPosition, transform.position);
-        float cameraMoveSpeed = 2f;
-        transform.position = transform.position + cameraMoveDir * distance * cameraMoveSpeed * Time.deltaTime;
-
+        float cameraMoveSpeed = 2.75f;
+        transform.position = transform.position + cameraMoveDir * cameraMoveSpeed * distance * Time.deltaTime;
     }
 
-    private void Zoom()
+    private void CarZoom()
     {
         carVel = car.getCarVel();
-        if (gameObject.tag == "MainCamera")
+        if (carVel > 3)
         {
-            if (carVel > 3 ^ carVel < -3)
-            {
-                for (int i = 5; i <= 10; i++)
-                {
-                    Camera.main.orthographicSize = i;
-                }
-
-            }
-            else
-            {
-                Camera.main.orthographicSize = 5;
-            }
+          Camera.main.orthographicSize = carVel;
+        }
+        else
+        {
+          Camera.main.orthographicSize = 3;
         }
     }
 }

@@ -16,7 +16,7 @@ public class CarDrive: MonoBehaviour {
     private float carVelocity;
     private Vector2 rightAngleFromForward;
     private Vector2 relativeForce;
-    private Vector3 move;
+    public Vector3 move;
 
     // Quaternions are used to represent rotations.
     Quaternion targetRotation;
@@ -24,16 +24,13 @@ public class CarDrive: MonoBehaviour {
     // On GameObject awake
     void Start()
     {
-
         rg2d = GetComponent<Rigidbody2D>();
         targetRotation = Quaternion.identity;
         driveSpeedRetain = driveSpeed;
-
     }
 
     // Update is called once per frame
     void Update()
-
     {
         Brake();
     }
@@ -48,7 +45,6 @@ public class CarDrive: MonoBehaviour {
     // Brake method used to set car speed to zero on jump axis equaling 1
     private void Brake()
     {
-
         if (Input.GetAxis("Jump") == 1.0f)
         {
             driveSpeed = 0.0f;
@@ -57,13 +53,11 @@ public class CarDrive: MonoBehaviour {
         {
             driveSpeed = driveSpeedRetain;
         }
-
     }
 
     // Steer method, used to control the X,Y,Z movement of the car
     private void Steer()
     {
-
         // Assigns x and y move to horizontal and verticle axis
         // Create new Vector3(x,y,z) with these axis
         moveX = Input.GetAxis("Horizontal");
@@ -74,6 +68,10 @@ public class CarDrive: MonoBehaviour {
         if (move.x != 0.0f || move.y != 0.0f)
         {
             // If the above is true, look towards Vector3.forward and take into account the move value
+            if (move.y < 0)
+            {
+              targetRotation = Quaternion.LookRotation(Vector3.forward, move);
+            }
             targetRotation = Quaternion.LookRotation(Vector3.forward, move);
             // To prescribe an arc while moving useing RotateTowards. We use the current rotation as the start point
             // and the above targetRotation as the end point
@@ -92,9 +90,9 @@ public class CarDrive: MonoBehaviour {
             {
                 steeringRightAngle = 90;
             }
-            // Find a vector2 that is 90 degrees relative to the local forward direction 
+            // Find a vector2 that is 90 degrees relative to the local forward direction
             rightAngleFromForward = Quaternion.AngleAxis(steeringRightAngle, Vector3.forward) * Vector2.up;
-            // Calculate the drift sideways velocity from comparing rigidbody forward movement and the 
+            // Calculate the drift sideways velocity from comparing rigidbody forward movement and the
             // right angle to this
             driftForce = Vector2.Dot(rg2d.velocity, rg2d.GetRelativeVector(rightAngleFromForward.normalized));
             // Apply an opposite force from the drift direction to simulate tire grip
@@ -105,10 +103,6 @@ public class CarDrive: MonoBehaviour {
 
     public float getCarVel()
     {
-        float vel = carVelocity;
-        return vel;
+      return carVelocity;
     }
 }
-        
-
-
