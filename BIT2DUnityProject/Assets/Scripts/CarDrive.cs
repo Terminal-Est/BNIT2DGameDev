@@ -94,7 +94,7 @@ public class CarDrive: MonoBehaviour {
             rightAngleFromForward = Quaternion.AngleAxis(steeringRightAngle, Vector3.forward) * Vector2.up;
             // Calculate the drift sideways velocity from comparing rigidbody forward movement and the
             // right angle to this
-            driftForce = Vector2.Dot(rg2d.velocity, rg2d.GetRelativeVector(rightAngleFromForward.normalized));
+            driftForce = Vector2.Dot(rg2d.velocity*2, rg2d.GetRelativeVector(rightAngleFromForward.normalized));
             // Apply an opposite force from the drift direction to simulate tire grip
             relativeForce = (rightAngleFromForward.normalized * -1.0f) * (driftForce * 10.0f);
             rg2d.AddForce(rg2d.GetRelativeVector(relativeForce));

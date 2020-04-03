@@ -25,20 +25,24 @@ public class CameraFollowCar : MonoBehaviour
         cameraFollowPosition.z = transform.position.z;
         Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
         float distance = Vector3.Distance(cameraFollowPosition, transform.position);
-        float cameraMoveSpeed = 2.75f;
+        float cameraMoveSpeed = 20f;
         transform.position = transform.position + cameraMoveDir * cameraMoveSpeed * distance * Time.deltaTime;
     }
 
     private void CarZoom()
     {
         carVel = car.getCarVel();
-        if (carVel > 3)
+        if (carVel > 3 && carVel < 7)
         {
-          Camera.main.orthographicSize = carVel;
+          Camera.main.orthographicSize = carVel * 1.5f;
+        }
+        else if (carVel < 3)
+        {
+          Camera.main.orthographicSize = 4.5f;
         }
         else
         {
-          Camera.main.orthographicSize = 3;
+          Camera.main.orthographicSize = 10.5f;
         }
     }
 }
