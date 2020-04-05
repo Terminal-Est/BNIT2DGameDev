@@ -25,7 +25,7 @@ public class CameraFollowCar : MonoBehaviour
         cameraFollowPosition.z = transform.position.z;
         Vector3 cameraMoveDir = (cameraFollowPosition - transform.position).normalized;
         float distance = Vector3.Distance(cameraFollowPosition, transform.position);
-        float cameraMoveSpeed = 20f;
+        float cameraMoveSpeed = 10f;
         transform.position = transform.position + cameraMoveDir * cameraMoveSpeed * distance * Time.deltaTime;
     }
 
@@ -36,11 +36,7 @@ public class CameraFollowCar : MonoBehaviour
         {
           Camera.main.orthographicSize = carVel * 1.5f;
         }
-        else if (carVel < 3)
-        {
-          Camera.main.orthographicSize = 4.5f;
-        }
-        else
+        else if (carVel >= 7)
         {
           Camera.main.orthographicSize = 10.5f;
         }

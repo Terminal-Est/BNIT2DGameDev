@@ -6,6 +6,7 @@ public class CarDrive: MonoBehaviour {
 
     public float driveSpeed;
     public float turnRate;
+    public float fuel;
 
     private Rigidbody2D rg2d;
     private float driveSpeedRetain;
@@ -65,7 +66,7 @@ public class CarDrive: MonoBehaviour {
         move = new Vector3(moveX, moveY, 0);
 
         // Check to see if either x or y axis are greater than zero
-        if (move.x != 0.0f || move.y != 0.0f)
+        if ((move.x != 0.0f || move.y != 0.0f) && fuel > 0)
         {
             // If the above is true, look towards Vector3.forward and take into account the move value
             if (move.y < 0)
@@ -80,6 +81,7 @@ public class CarDrive: MonoBehaviour {
             // value, the driveSpeed variable and our fixed FixedUpdate delta (time between updates)
             // and multiply them together to get an x, y force.
             rg2d.AddRelativeForce(Vector3.up * driveSpeed * Time.fixedDeltaTime);
+            fuel -= driveSpeed / 10000;
             // Calculate drift
             // Get a right angle compared to the current rotational velocity
             if (rg2d.angularVelocity > 0)
