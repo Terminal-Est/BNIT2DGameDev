@@ -115,7 +115,15 @@ public class CarDrive: MonoBehaviour {
         if (collision.gameObject.tag == "DriveGoal")
         {
             print("Test");
-            SceneManager.LoadScene("2DPlatformer");
+            SceneManager.LoadScene("Level1Player");
+        }
+        else if (collision.gameObject.tag == "Block")
+        {
+            //playerHealth -= 10;
+            //if (playerHealth < 100)
+            //{
+              print("Took Damage");
+            //}
         }
     }
 

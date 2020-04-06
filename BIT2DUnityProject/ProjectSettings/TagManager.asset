@@ -8,6 +8,7 @@ TagManager:
   - Pit
   - Car
   - DriveGoal
+  - Block
   layers:
   - Default
   - TransparentFX

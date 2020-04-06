@@ -10,10 +10,11 @@ public class PersistentManager : MonoBehaviour
    public static PersistentManager Instance { get; private set; }
 
     public int testValue;
+    public int playerHealth;
 
     private void Awake()
     {
-        // If object instance is empty, fill it 
+        // If object instance is empty, fill it
         if (Instance == null)
         {
             Instance = this;
