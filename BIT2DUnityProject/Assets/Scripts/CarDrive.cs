@@ -115,7 +115,7 @@ public class CarDrive: MonoBehaviour {
         if (collision.gameObject.tag == "DriveGoal")
         {
             print("Test");
-            SceneManager.LoadScene("Level1Player");
+            SceneManager.LoadScene("Transition");
         }
         else if (collision.gameObject.tag == "Block")
         {
