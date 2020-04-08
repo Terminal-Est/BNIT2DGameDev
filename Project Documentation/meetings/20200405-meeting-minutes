@@ -1,0 +1,37 @@
+Meetings Meetings
+
+Rob
+- Focus on the top down (programming)
+- Tried GIMP
+
+Chris
+- Top down, hills, mud (programming)
+- document formatting
+
+Edward
+- Game Design
+- Sounds (menu and background audio)
+
+Tyson
+- Game 
+- Assignment 2
+
+--
+
+Text channels - leave them
+
+Agreed to stay with 2018.4.18f1 LTS to latest version.
+
+Put together all the scaffolding.
+
+Agreed add scene on the game to transition.
+
+Agreed transition between sections to cutscene.
+Agreed back depot (garage) after boss has been beaten.
+
+Cutscene fail mission (run out of fuel, too much damage, no health)
+
+Global Objects
+--
+Game object
+Player object
