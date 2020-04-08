@@ -8,7 +8,6 @@ public class CarDrive: MonoBehaviour {
 
     public float driveSpeed;
     public float turnRate;
-    public float fuel;
 
     private Rigidbody2D rg2d;
     private float driveSpeedRetain;
@@ -68,7 +67,7 @@ public class CarDrive: MonoBehaviour {
         move = new Vector3(moveX, moveY, 0);
 
         // Check to see if either x or y axis are greater than zero
-        if ((move.x != 0.0f || move.y != 0.0f) && fuel > 0)
+        if ((move.x != 0.0f || move.y != 0.0f) && PlayerStats.fuel > 0f && PlayerStats.vehicleDamage < 100)
         {
             // If the above is true, look towards Vector3.forward and take into account the move value
             if (move.y < 0)
@@ -83,7 +82,7 @@ public class CarDrive: MonoBehaviour {
             // value, the driveSpeed variable and our fixed FixedUpdate delta (time between updates)
             // and multiply them together to get an x, y force.
             rg2d.AddRelativeForce(Vector3.up * driveSpeed * Time.fixedDeltaTime);
-            fuel -= driveSpeed / 10000;
+            PlayerStats.fuel -= driveSpeed / 1000;
             // Calculate drift
             // Get a right angle compared to the current rotational velocity
             if (rg2d.angularVelocity > 0)
@@ -102,6 +101,10 @@ public class CarDrive: MonoBehaviour {
             // Apply an opposite force from the drift direction to simulate tire grip
             relativeForce = (rightAngleFromForward.normalized * -1.0f) * (driftForce * 10.0f);
             rg2d.AddForce(rg2d.GetRelativeVector(relativeForce));
+        }
+        else if (PlayerStats.fuel <=  0f)
+        {
+          respawn();
         }
     }
 
@@ -122,8 +125,48 @@ public class CarDrive: MonoBehaviour {
               PlayerStats.playerHealth -= 5;
               PlayerStats.vehicleDamage += 5;
               print("Vehicle has " + PlayerStats.vehicleDamage + " damage.");
-              print("Player has " + PlayerStats.playerHealth + " damage.");
+              print("Player has " + PlayerStats.playerHealth + " health.");
+              if (PlayerStats.playerHealth <= 0)
+              {
+                print("Player has " + PlayerStats.playerHealth + " health and has died.");
+                respawn();
+              }
+              if (PlayerStats.vehicleDamage >= 100)
+              {
+                print("Vehicle has " + PlayerStats.vehicleDamage + " damage and has been destoryed.");
+                respawn();
+              }
         }
+    }
+
+    private void respawn()
+    {
+      var player = GameObject.FindGameObjectWithTag("Car");
+      if (PlayerStats.vehicleDamage >= 100 || PlayerStats.playerHealth <= 0)
+      {
+        if (PlayerStats.cash >= 3000)
+        {
+          PlayerStats.cash -= 3000;
+          player.transform.position = new Vector2(-6.75f, 0f);
+        }
+        else
+        {
+          print("Your cash has fallen to $" + PlayerStats.cash + ". You are unable to repair your vehicle. GAME OVER");
+          //go back to garage
+        }
+      }
+      else if (PlayerStats.fuel < 0)
+      {
+        if (PlayerStats.cash >= 200)
+        {
+          PlayerStats.cash -= 200;
+          print("Player has run out of fuel. Refueling has cost $200. You have $" + PlayerStats.cash + " remaining.");
+          PlayerStats.fuel = 600f;
+        }
+        else
+          print("Your cash has fallen to $" + PlayerStats.cash + ". You are unable to refuel your vehicle. GAME OVER");
+          //go back to garage
+      }
     }
 
 }
