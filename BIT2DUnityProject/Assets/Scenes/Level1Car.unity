@@ -2999,6 +2999,16 @@ PrefabInstance:
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7655594064923095340, guid: 4723837d93ebfac458ccbdf8934809be,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655594064923095340, guid: 4723837d93ebfac458ccbdf8934809be,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4723837d93ebfac458ccbdf8934809be, type: 3}
 --- !u!1 &1157074503 stripped
@@ -3007,8 +3017,8 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1157074502}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &1157074504
-PolygonCollider2D:
+--- !u!61 &1157074504
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3016,11 +3026,11 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1157074503}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: c572b5e1ef83b874b9407f1f63b17f68, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.026350498, y: -0.027082086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3030,25 +3040,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.345, y: -0.175}
-      - {x: 0.345, y: 0.545}
-      - {x: 0.36499998, y: 0.585}
-      - {x: 0.36499998, y: 0.745}
-      - {x: 0.355, y: 0.805}
-      - {x: -0.355, y: 0.805}
-      - {x: -0.39499998, y: 0.79499996}
-      - {x: -0.39499998, y: -0.145}
-      - {x: -0.42499998, y: -0.175}
-      - {x: -0.42499998, y: -0.24499999}
-      - {x: -0.375, y: -0.275}
-      - {x: -0.375, y: -0.675}
-      - {x: -0.13499999, y: -0.825}
-      - {x: 0.16499999, y: -0.825}
-      - {x: 0.325, y: -0.755}
-      - {x: 0.36499998, y: -0.39499998}
-      - {x: 0.36499998, y: -0.175}
+  serializedVersion: 2
+  m_Size: {x: 0.621686, y: 1.534486}
+  m_EdgeRadius: 0
 --- !u!50 &1157074505
 Rigidbody2D:
   serializedVersion: 4
@@ -3086,6 +3080,26 @@ MonoBehaviour:
   turnRate: 5
   fuel: 1000
   move: {x: 0, y: 0, z: 0}
+--- !u!114 &1157074507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157074503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd09ee226de88fc479177cfd33837b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cars:
+  - {fileID: 21300000, guid: b2e2f2e9c48c4514fbb225b54656d783, type: 3}
+  - {fileID: 21300000, guid: 1605f4c15c1d81a4d9f6dbb85f3809e0, type: 3}
+  - {fileID: 21300000, guid: 099353c80034de94a8fe8a3af5140460, type: 3}
+  - {fileID: 21300000, guid: 89ef40737f82c9e40aa6dd269241f484, type: 3}
+  - {fileID: 21300000, guid: f6f2bbb3b11a7ab4295489bf949b34d5, type: 3}
+  - {fileID: 21300000, guid: 7da9aedfa6c85ae468df3c2986d55ba9, type: 3}
+  - {fileID: 21300000, guid: be8934b94d0292e4bab3ed47cde1d4e1, type: 3}
 --- !u!4 &1157074508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7559600843654292250, guid: 4723837d93ebfac458ccbdf8934809be,
@@ -3854,7 +3868,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1656243504}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 721cd5baa365d2b4f96fd9b7580c471f, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
@@ -3885,9 +3899,9 @@ AreaEffector2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_UseGlobalAngle: 0
-  m_ForceAngle: 0
-  m_ForceMagnitude: 50
-  m_ForceVariation: 0
+  m_ForceAngle: -180
+  m_ForceMagnitude: 10
+  m_ForceVariation: -100
   m_ForceTarget: 1
   m_Drag: 3
   m_AngularDrag: 0
@@ -3951,7 +3965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8d6fa18b011af4dad9728fcc65906b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeChange: 3
+  timeChange: 1
 --- !u!1 &1685770984
 GameObject:
   m_ObjectHideFlags: 0

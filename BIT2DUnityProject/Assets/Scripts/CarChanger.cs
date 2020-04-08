@@ -6,7 +6,6 @@ using UnityEditor;
 public class CarChanger : MonoBehaviour
 {
 
-    public GameObject playerVehicle;
     public SpriteRenderer car;
     public List<Sprite> cars = new List<Sprite>();
     // Start is called before the first frame update
@@ -33,8 +32,9 @@ public class CarChanger : MonoBehaviour
       car.sprite = cars[currentOption];
     }
 
-    public void Purchase()
+    public void PurchaseCar()
     {
-      PrefabUtility.SaveAsPrefabAsset(playerVehicle, "Assets/NewPlayerVehicle.prefab");
+      PlayerStats.vehicleNo = currentOption;
     }
+
 }

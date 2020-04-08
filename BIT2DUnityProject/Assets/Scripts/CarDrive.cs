@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class CarDrive: MonoBehaviour {
@@ -114,16 +115,14 @@ public class CarDrive: MonoBehaviour {
     {
         if (collision.gameObject.tag == "DriveGoal")
         {
-            print("Test");
             SceneManager.LoadScene("Transition");
         }
         else if (collision.gameObject.tag == "Block")
         {
-            //playerHealth -= 10;
-            //if (playerHealth < 100)
-            //{
-              print("Took Damage");
-            //}
+              PlayerStats.playerHealth -= 5;
+              PlayerStats.vehicleDamage += 5;
+              print("Vehicle has " + PlayerStats.vehicleDamage + " damage.");
+              print("Player has " + PlayerStats.playerHealth + " damage.");
         }
     }
 

@@ -202,6 +202,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 2116334539}
+        m_MethodName: PurchaseCar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1635734312}
         m_MethodName: SetActive
         m_Mode: 6
@@ -2044,51 +2055,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 553.57, y: 413.86}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &699358074
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 699358076}
-  - component: {fileID: 699358075}
-  m_Layer: 0
-  m_Name: PersistentManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &699358075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699358074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51a3248528d1b0141a880c3fd0de4f00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testValue: 0
-  playerHealth: 100
---- !u!4 &699358076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699358074}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 495.35104, y: 461.10013, z: -5.061172}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &710165531
 GameObject:
   m_ObjectHideFlags: 0
@@ -6424,7 +6390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4777d36b0d8774aa3a50160d506aaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerVehicle: {fileID: 0}
   car: {fileID: 894117553}
   cars:
   - {fileID: 21300000, guid: b2e2f2e9c48c4514fbb225b54656d783, type: 3}
