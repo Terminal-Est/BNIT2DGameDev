@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarSprite : MonoBehaviour
+public class LoadCarSprite : MonoBehaviour
 {
     public List<Sprite> cars = new List<Sprite>();
 

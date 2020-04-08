@@ -31,7 +31,7 @@ public class IceScript : MonoBehaviour
     IEnumerator ChangeAngle()
     {
         yield return new WaitForSeconds(timeChange);
-        fAngle = Random.Range(0, -180);
+        fAngle = Random.Range(300, 60);
         fChange = true;
     }
 

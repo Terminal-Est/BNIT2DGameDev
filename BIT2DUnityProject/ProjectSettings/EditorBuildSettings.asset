@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1Player.unity
     guid: e6569983bc891684497db725f7a56d27
+  - enabled: 1
+    path: Assets/Scenes/GameOverCarDestroyed.unity
+    guid: 37f258bed42721343bef19232eff5571
+  - enabled: 1
+    path: Assets/Scenes/GameOverCarFuel.unity
+    guid: 433622aeb4952ab4cbb8a6c418a35ef8
+  - enabled: 1
+    path: Assets/Scenes/GameOverPlayer.unity
+    guid: 29bf286dcb7f84840af34b6153be931d
   m_configObjects: {}

@@ -104,7 +104,7 @@ public class CarDrive: MonoBehaviour {
         }
         else if (PlayerStats.fuel <=  0f)
         {
-          respawn();
+          Invoke("respawn", 2f);
         }
     }
 
@@ -129,12 +129,12 @@ public class CarDrive: MonoBehaviour {
               if (PlayerStats.playerHealth <= 0)
               {
                 print("Player has " + PlayerStats.playerHealth + " health and has died.");
-                respawn();
+                FindObjectOfType<GameHandler>().GameOver();
               }
               if (PlayerStats.vehicleDamage >= 100)
               {
                 print("Vehicle has " + PlayerStats.vehicleDamage + " damage and has been destoryed.");
-                respawn();
+                FindObjectOfType<GameHandler>().GameOver();
               }
         }
     }
@@ -151,8 +151,7 @@ public class CarDrive: MonoBehaviour {
         }
         else
         {
-          print("Your cash has fallen to $" + PlayerStats.cash + ". You are unable to repair your vehicle. GAME OVER");
-          //go back to garage
+          FindObjectOfType<GameHandler>().GameOver();
         }
       }
       else if (PlayerStats.fuel < 0)
@@ -164,8 +163,7 @@ public class CarDrive: MonoBehaviour {
           PlayerStats.fuel = 600f;
         }
         else
-          print("Your cash has fallen to $" + PlayerStats.cash + ". You are unable to refuel your vehicle. GAME OVER");
-          //go back to garage
+          FindObjectOfType<GameHandler>().GameOver();
       }
     }
 
