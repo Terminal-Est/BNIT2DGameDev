@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class RunAndJump: MonoBehaviour {
@@ -25,12 +26,15 @@ public class RunAndJump: MonoBehaviour {
 
     // Update is called once per frame
     void Update()
-
     {
+
+      if (PlayerStats.playerHealth > 0)
+      {
         moveDirection = Input.GetAxis("Horizontal");
         rg2d.velocity = new Vector2(moveDirection * runSpeed, rg2d.velocity.y);
         Move();
         Jump();
+      }
     }
 
     // Method For jump, check for jump key down
@@ -73,10 +77,22 @@ public class RunAndJump: MonoBehaviour {
     // Method for resetting jump counter
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        var player = GameObject.FindGameObjectWithTag("Player");
+
         if (collision.gameObject.tag == "Ground")
         {
             jumpCount = 0;
         }
+        else if (collision.gameObject.tag == "Pit")
+        {
+            PlayerStats.playerHealth -= 50;
+            if (PlayerStats.playerHealth <= 0)
+              FindObjectOfType<GameHandler>().GameOver();
+            else
+              player.transform.position = new Vector2(-3.644f, -0.767f);
+        }
+        else if (collision.gameObject.tag == "DriveGoal")
+          FindObjectOfType<GameHandler>().LoadMissionCompleteMenu();
     }
 
     // Method for flipping character animation
@@ -84,4 +100,4 @@ public class RunAndJump: MonoBehaviour {
       facingRight = !facingRight; //inverse
       transform.Rotate(0f, 180f, 0f);
     }
-}
+        }
