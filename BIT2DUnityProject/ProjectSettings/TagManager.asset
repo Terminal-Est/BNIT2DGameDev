@@ -9,6 +9,9 @@ TagManager:
   - Car
   - DriveGoal
   - Block
+  - CarFuel
+  - CarDmg
+  - Cash
   layers:
   - Default
   - TransparentFX
