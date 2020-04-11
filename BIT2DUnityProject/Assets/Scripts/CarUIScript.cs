@@ -7,7 +7,6 @@ public class CarUIScript : MonoBehaviour
 {
 
     private float damage;
-    private float fuel;
     private float money;
 
     Text text;
@@ -19,11 +18,7 @@ public class CarUIScript : MonoBehaviour
 
     void Update()
     {
-        if (text.tag == "CarFuel")
-        {
-            fuel = PlayerStats.fuel;
-            text.text = "Fuel: " + Mathf.Round(fuel);
-        } else if (text.tag == "CarDmg")
+        if (text.tag == "CarDmg")
         {
             damage = PlayerStats.vehicleDamage;
             text.text = "Damage: " + Mathf.Round(damage);
