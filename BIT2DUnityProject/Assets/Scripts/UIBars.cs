@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIBarsScript : MonoBehaviour
+public class UIBars : MonoBehaviour
 {
     // Start is called before the first frame update
 

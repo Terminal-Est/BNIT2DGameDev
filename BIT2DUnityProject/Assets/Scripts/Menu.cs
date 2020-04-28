@@ -11,6 +11,11 @@ public class Menu : MonoBehaviour
     SceneManager.LoadScene("Garage");
   }
 
+  public void MultiPlay()
+  {
+    SceneManager.LoadScene("MultiPlayer");
+  }
+
   public void Mission1()
   {
     SceneManager.LoadScene("Level1Car");

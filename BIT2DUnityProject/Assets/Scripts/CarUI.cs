@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class CarUIScript : MonoBehaviour
+public class CarUI : MonoBehaviour
 {
 
     private float damage;

@@ -12,6 +12,7 @@ TagManager:
   - CarFuel
   - CarDmg
   - Cash
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -19,6 +19,7 @@ public class CarDrive: MonoBehaviour {
     private Vector2 rightAngleFromForward;
     private Vector2 relativeForce;
     public Vector3 move;
+    public Transform position;
 
     // Quaternions are used to represent rotations.
     Quaternion targetRotation;
@@ -26,6 +27,7 @@ public class CarDrive: MonoBehaviour {
     // On GameObject awake
     void Start()
     {
+        position = GetComponent<Transform>();
         rg2d = GetComponent<Rigidbody2D>();
         targetRotation = Quaternion.identity;
         driveSpeedRetain = driveSpeed;
@@ -120,7 +122,7 @@ public class CarDrive: MonoBehaviour {
         {
             SceneManager.LoadScene("Transition");
         }
-        else if (collision.gameObject.tag == "Block")
+        else if (collision.gameObject.tag == "Block" || collision.gameObject.tag == "Enemy")
         {
               PlayerStats.playerHealth -= 5;
               PlayerStats.vehicleDamage += 5;
