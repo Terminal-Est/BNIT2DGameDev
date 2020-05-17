@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIBars : MonoBehaviour
+public class UIFuelBars : MonoBehaviour
 {
     // Start is called before the first frame update
 
 
     private float fuel;
     private float fuelScaled;
+
     private Vector3 scaleChange;
 
     Transform tf;

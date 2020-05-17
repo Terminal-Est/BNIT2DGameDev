@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class CarUI : MonoBehaviour
+public class UI : MonoBehaviour
 {
 
     private float damage;
     private float money;
+    private float health;
 
     Text text;
 
@@ -25,7 +26,7 @@ public class CarUI : MonoBehaviour
         } else if (text.tag == "Cash")
         {
             money = PlayerStats.cash;
-            text.text = "Cash: " + Mathf.Round(money);
+            text.text = "Cash: " + "$" + Mathf.Round(money);
         }
     }
 

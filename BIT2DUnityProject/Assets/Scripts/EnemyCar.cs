@@ -23,9 +23,7 @@ public class EnemyCar : MonoBehaviour
         box = GetComponent<BoxCollider2D>();
         target = GameObject.Find("PlayerVehicle");
         targetRotation = Quaternion.identity;
-        turnRate = 3f;
         booped = false;
-        speed = 5f;
     }
 
     private void Update()
@@ -57,5 +55,3 @@ public class EnemyCar : MonoBehaviour
         booped = false;
     }
 }
- 
-

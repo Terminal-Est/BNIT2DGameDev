@@ -30,7 +30,7 @@ public class CameraFollow : MonoBehaviour
       }
       else if (sceneName == "Level1Player")
       {
-        cameraMoveSpeed = 2f;
+        cameraMoveSpeed = 5f;
       }
         Vector3 cameraFollowPosition = GetCameraFollowPositionFunc();
         cameraFollowPosition.z = transform.position.z;
