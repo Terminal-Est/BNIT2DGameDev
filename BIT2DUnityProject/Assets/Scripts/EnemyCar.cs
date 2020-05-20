@@ -12,9 +12,6 @@ public class EnemyCar : MonoBehaviour
     private Quaternion targetRotation;
     private Vector3 targetPosition;
 
-    private float waitTime;
-    public float startWaitTime;
-
     public float turnRate;
     public float patrolSpeed;
     public float chaseSpeed;
@@ -29,7 +26,6 @@ public class EnemyCar : MonoBehaviour
     void Start()
     {
         crash = false;
-        waitTime = startWaitTime;
         player = GameObject.Find("PlayerVehicle").GetComponent<Transform>();
         circ = GetComponent<CircleCollider2D>();
         move = GetComponent<Transform>();

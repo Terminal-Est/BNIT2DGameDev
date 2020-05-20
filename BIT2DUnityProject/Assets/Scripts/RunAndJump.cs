@@ -43,13 +43,9 @@ public class RunAndJump: MonoBehaviour {
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumpCount)
         {
             if(jumpCount != 1)
-            {
               rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce), ForceMode2D.Impulse);
-            }
             else
-            {
               rg2d.AddForce(new Vector2(rg2d.velocity.x, jumpForce/jumpForceDivider), ForceMode2D.Impulse);
-            }
             jumpCount++;
         }
     }
@@ -60,18 +56,12 @@ public class RunAndJump: MonoBehaviour {
       {
         animator.SetInteger("personInt", 1);
         if(moveDirection > 0 && !facingRight)
-        {
           FlipCharacter();
-        }
         else if (moveDirection < 0 && facingRight)
-        {
           FlipCharacter();
-        }
       }
       else
-      {
         animator.SetInteger("personInt", 0);
-      }
     }
 
     // Method for resetting jump counter
@@ -80,9 +70,7 @@ public class RunAndJump: MonoBehaviour {
         var player = GameObject.FindGameObjectWithTag("Player");
 
         if (collision.gameObject.tag == "Ground")
-        {
             jumpCount = 0;
-        }
         else if (collision.gameObject.tag == "Pit")
         {
             PlayerStats.playerHealth -= 50;

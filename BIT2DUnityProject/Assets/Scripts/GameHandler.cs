@@ -18,25 +18,17 @@ public class GameHandler : MonoBehaviour
     public Transform playerTransform;
     public Transform carTransform;
 
-
     void Update(){
       Scene currentScene = SceneManager.GetActiveScene();
       string sceneName = currentScene.name;
       if (sceneName == "Transition")
-      {
         TransitionTimer();
-      }
-
       if (Input.GetKeyDown(KeyCode.Escape))
       {
         if (GameIsPaused)
-        {
           ResumeGame();
-        }
         else
-        {
           PauseGame();
-        }
       }
     }
 
