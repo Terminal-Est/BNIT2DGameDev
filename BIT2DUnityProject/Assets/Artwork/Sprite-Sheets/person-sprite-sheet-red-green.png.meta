@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: af925fd5a5e95d4449ccc3c9f83fd29c
+guid: 20887ba866fc14776b3234fabe2882f9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: person-sprite-sheet-MIW_0
-    21300002: person-sprite-sheet-MIW_1
-    21300004: person-sprite-sheet-MIW_2
-    21300006: person-sprite-sheet-MIW_3
-    21300008: person-sprite-sheet-MIW_4
-    21300010: person-sprite-sheet-MIW_5
-    21300012: person-sprite-sheet-MIW_6
-    21300014: person-sprite-sheet-MIW_7
-    21300016: person-sprite-sheet-MIW_8
-    21300018: person-sprite-sheet-MIW_9
-    21300020: person-sprite-sheet-MIW_10
-    21300022: person-sprite-sheet-MIW_11
+    21300000: person-sprite-sheet-red-green_0
+    21300002: person-sprite-sheet-red-green_1
+    21300004: person-sprite-sheet-red-green_2
+    21300006: person-sprite-sheet-red-green_3
+    21300008: person-sprite-sheet-red-green_4
+    21300010: person-sprite-sheet-red-green_5
+    21300012: person-sprite-sheet-red-green_6
+    21300014: person-sprite-sheet-red-green_7
+    21300016: person-sprite-sheet-red-green_8
+    21300018: person-sprite-sheet-red-green_9
+    21300020: person-sprite-sheet-red-green_10
+    21300022: person-sprite-sheet-red-green_11
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -72,32 +72,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 8192
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_0
+      name: person-sprite-sheet-red-green_0
       rect:
         serializedVersion: 2
         x: 2
@@ -143,13 +121,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7a5542fd2c074f9cb734feea371bf79
+      spriteID: f0262a5b895f44b40b0e26cc41bd4a53
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_1
+      name: person-sprite-sheet-red-green_1
       rect:
         serializedVersion: 2
         x: 38
@@ -163,13 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e123faa0151aa40eba23ce12135935c7
+      spriteID: 25c4bfc4376de44fb82627370a7538e6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_2
+      name: person-sprite-sheet-red-green_2
       rect:
         serializedVersion: 2
         x: 74
@@ -183,13 +161,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1435285389542b5a69db9d351cd4ce
+      spriteID: f3a928a450f974f169592f985248c4c9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_3
+      name: person-sprite-sheet-red-green_3
       rect:
         serializedVersion: 2
         x: 2
@@ -203,13 +181,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2d3ce3871ed04c779139c777866ecde
+      spriteID: 169b99d5e6e4f4c3f87e44e4b68658ff
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_4
+      name: person-sprite-sheet-red-green_4
       rect:
         serializedVersion: 2
         x: 38
@@ -223,13 +201,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76f4900e61bf241849949f22d2c3edf2
+      spriteID: a55063af10c1f4d818cef12d6a9d120e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_5
+      name: person-sprite-sheet-red-green_5
       rect:
         serializedVersion: 2
         x: 74
@@ -243,13 +221,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88cbe1a45548249a8b0932df7fcf685e
+      spriteID: a005409940b1343a096d051f9f71ddcc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_6
+      name: person-sprite-sheet-red-green_6
       rect:
         serializedVersion: 2
         x: 2
@@ -263,13 +241,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dcf0943e73664d688a61481e371523b
+      spriteID: 5c2c458925b9548749113e6a7d418df0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_7
+      name: person-sprite-sheet-red-green_7
       rect:
         serializedVersion: 2
         x: 38
@@ -283,13 +261,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 188d972de41164f74b22cbb79118150a
+      spriteID: 595b23c0c591c47dba0145d9052351ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_8
+      name: person-sprite-sheet-red-green_8
       rect:
         serializedVersion: 2
         x: 74
@@ -303,13 +281,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47f369f4c39e749b590c2fcfd79707b3
+      spriteID: 2b445f40d7b31459ab80e72fe1c30a17
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_9
+      name: person-sprite-sheet-red-green_9
       rect:
         serializedVersion: 2
         x: 2
@@ -323,13 +301,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff22fc0ee80ac4c4ebcc4b4a62aaad9d
+      spriteID: 8f523c6c424644f07bdd363036fccca2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_10
+      name: person-sprite-sheet-red-green_10
       rect:
         serializedVersion: 2
         x: 38
@@ -343,13 +321,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f75e3113c99b415bb2a598a8e708566
+      spriteID: b742176a381b14e139640ff99c4c79ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: person-sprite-sheet-MIW_11
+      name: person-sprite-sheet-red-green_11
       rect:
         serializedVersion: 2
         x: 74
@@ -363,7 +341,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e9cdc54085da4a5ba14d8934a4eb564
+      spriteID: 58d005e1c76814fb0a95dc724d3fd9a3
       vertices: []
       indices: 
       edges: []
@@ -371,7 +349,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4630589348d5b9c44bb251e58df1e166
+    spriteID: 714c6cab8b89f459c9d4015d68a8f783
     vertices: []
     indices: 
     edges: []
