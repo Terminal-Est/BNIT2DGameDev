@@ -22,10 +22,14 @@ public class UI : MonoBehaviour
         if (text.tag == "CarDmg")
         {
             damage = PlayerStats.vehicleDamage;
+            if (damage > 100)
+              damage = 100;
             text.text = "Damage: " + Mathf.Round(damage);
         } else if (text.tag == "Cash")
         {
             money = PlayerStats.cash;
+            if (money < 0)
+              money = 0;
             text.text = "Cash: " + "$" + Mathf.Round(money);
         }
     }

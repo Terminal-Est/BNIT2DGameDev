@@ -9,49 +9,77 @@ public class EnemyCar : MonoBehaviour
     private BoxCollider2D box;
     private Transform move;
     private Rigidbody2D rg2d;
-    private GameObject target;
     private Quaternion targetRotation;
-    private bool booped;
+    private Vector3 targetPosition;
+
+    private float waitTime;
+    public float startWaitTime;
+
     public float turnRate;
-    public float speed;
+    public float patrolSpeed;
+    public float chaseSpeed;
+
+    public Transform player;
+    public Transform[] patrolRoute;
+
+    private float speed;
+    private bool crash;
+    private int patrolDestPoint = 0;
 
     void Start()
     {
+        crash = false;
+        waitTime = startWaitTime;
+        player = GameObject.Find("PlayerVehicle").GetComponent<Transform>();
         circ = GetComponent<CircleCollider2D>();
         move = GetComponent<Transform>();
         rg2d = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
-        target = GameObject.Find("PlayerVehicle");
         targetRotation = Quaternion.identity;
-        booped = false;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // Ig there is no crash event with player, move enemy towards player
-        if (circ.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()) && !booped)
-        {
-         //Added RotateTowards to make enemy car behave like player car
-            Vector3 targetPosition = target.transform.position;
-            targetRotation = Quaternion.LookRotation(Vector3.forward, targetPosition - move.position);
-            move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
-            rg2d.velocity = move.up * speed;
-        }
-
-        //Check for collision, if enemy collides with player vehicle, set velocity to zero and call timer coroutine
-        if (box.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()) && !booped)
-        {
-            rg2d.velocity = new Vector2(0f, 0f);
-            booped = true;
-            StartCoroutine(Boop());
-        }
+          if (circ.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()) && crash == false)
+            Chase();
+          else
+            Patrol();
     }
 
-    IEnumerator Boop()
+    void Chase()
     {
-        //yeild timer then set crash to false
-        yield return new WaitForSeconds(1);
-        print("Booped");
-        booped = false;
+      if (crash == false)
+        speed = chaseSpeed;
+      targetPosition = player.transform.position;
+      //Added RotateTowards to make enemy car behave like player car
+      targetRotation = Quaternion.LookRotation(Vector3.forward, targetPosition - move.position);
+      move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
+      rg2d.velocity = move.up * speed;
+      if (box.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()))
+      {
+        crash = true;
+        StartCoroutine(WaitTime());
+      }
+    }
+
+    void Patrol()
+    {
+      speed = patrolSpeed;
+      transform.position = Vector2.MoveTowards(transform.position, patrolRoute[patrolDestPoint].position, speed * Time.deltaTime);
+      targetRotation = Quaternion.LookRotation(Vector3.forward, patrolRoute[patrolDestPoint].position - move.position);
+      move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
+      if (Vector2.Distance(transform.position, patrolRoute[patrolDestPoint].position) < 0.2f)
+      {
+          patrolDestPoint++;
+          if (patrolDestPoint >= patrolRoute.Length)
+            patrolDestPoint = 0;
+      }
+    }
+
+    IEnumerator WaitTime()
+    {
+      speed = 0;
+      yield return new WaitForSeconds(2);
+      crash = false;
     }
 }
