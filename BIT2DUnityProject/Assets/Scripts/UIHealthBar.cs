@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIHPBars : MonoBehaviour
+public class UIHealthBar : MonoBehaviour
 {
-  private float hp;
-  private float hpScaled;
+  private float health;
+  private float healthScaled;
 
   private Vector3 scaleChange;
 
@@ -20,9 +20,9 @@ public class UIHPBars : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-      hp = PlayerStats.playerHealth;
-      hpScaled = hp / 100;
-      scaleChange = new Vector3(hpScaled, 1f);
+      health = PlayerStats.playerHealth;
+      healthScaled = health / 100;
+      scaleChange = new Vector3(healthScaled, 1f);
       tf.localScale = scaleChange;
   }
 }

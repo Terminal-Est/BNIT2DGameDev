@@ -19,7 +19,6 @@ public class CarDrive: MonoBehaviour {
     private Vector2 rightAngleFromForward;
     private Vector2 relativeForce;
     public Vector3 move;
-    public Transform position;
 
     // Quaternions are used to represent rotations.
     Quaternion targetRotation;
@@ -27,7 +26,6 @@ public class CarDrive: MonoBehaviour {
     // On GameObject awake
     void Start()
     {
-        position = GetComponent<Transform>();
         rg2d = GetComponent<Rigidbody2D>();
         targetRotation = Quaternion.identity;
         driveSpeedRetain = driveSpeed;
@@ -50,13 +48,9 @@ public class CarDrive: MonoBehaviour {
     private void Brake()
     {
         if (Input.GetAxis("Jump") == 1.0f)
-        {
             driveSpeed = 0.0f;
-        }
         else
-        {
             driveSpeed = driveSpeedRetain;
-        }
     }
 
     // Steer method, used to control the X,Y,Z movement of the car
@@ -84,7 +78,7 @@ public class CarDrive: MonoBehaviour {
             // value, the driveSpeed variable and our fixed FixedUpdate delta (time between updates)
             // and multiply them together to get an x, y force.
             rg2d.AddRelativeForce(Vector3.up * driveSpeed * Time.fixedDeltaTime);
-            PlayerStats.fuel -= driveSpeed / 1000;
+            PlayerStats.fuel -= driveSpeed / 5000;
             // Calculate drift
             // Get a right angle compared to the current rotational velocity
             if (rg2d.angularVelocity > 0)

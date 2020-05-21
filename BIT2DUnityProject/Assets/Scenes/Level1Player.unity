@@ -7175,7 +7175,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 40
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
@@ -8923,7 +8923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &890403700
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9810,7 +9810,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1046494955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a95158687d45004ea27b2bacab0982a, type: 3}
+  m_Script: {fileID: 11500000, guid: 27d6050509381a448a0cdadb967b9cee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1069040839
@@ -11818,7 +11818,6 @@ GameObject:
   - component: {fileID: 1313353216}
   - component: {fileID: 1313353219}
   - component: {fileID: 1313353218}
-  - component: {fileID: 1313353217}
   m_Layer: 5
   m_Name: PlayerHealth
   m_TagString: PlayerHP
@@ -11845,18 +11844,6 @@ RectTransform:
   m_AnchoredPosition: {x: 193.58997, y: -113.7}
   m_SizeDelta: {x: 304.68, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1313353217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313353215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9236cc036220f944b641a0395f842b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1313353218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11878,7 +11865,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 40
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 40
@@ -11888,7 +11875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HP: '
+  m_Text: 'Health: '
 --- !u!222 &1313353219
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12448,7 +12435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 246, y: -114}
+  m_AnchoredPosition: {x: 278, y: -110.2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1383459518

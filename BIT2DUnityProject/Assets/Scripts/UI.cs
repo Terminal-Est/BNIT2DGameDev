@@ -5,33 +5,25 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-
-    private float damage;
-    private float money;
-    private float health;
+    private int money;
+    public Color Green;
 
     Text text;
+    Text greenCashMoney;
 
     void Awake()
     {
         text = GetComponent<Text>();
+        greenCashMoney = GetComponent<Text>();
     }
 
     void Update()
     {
-        if (text.tag == "CarDmg")
-        {
-            damage = PlayerStats.vehicleDamage;
-            if (damage > 100)
-              damage = 100;
-            text.text = "Damage: " + Mathf.Round(damage);
-        } else if (text.tag == "Cash")
-        {
-            money = PlayerStats.cash;
-            if (money < 0)
-              money = 0;
-            text.text = "Cash: " + "$" + Mathf.Round(money);
-        }
+      money = PlayerStats.cash;
+      if (money < 0)
+        money = 0;
+      greenCashMoney.color = Green;
+      greenCashMoney.text = money.ToString();
+      text.text = "$" + greenCashMoney.text;
     }
-
 }

@@ -2,11 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIFuelBars : MonoBehaviour
+public class UIFuelBar : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-
     private float fuel;
     private float fuelScaled;
 

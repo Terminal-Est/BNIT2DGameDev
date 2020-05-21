@@ -15,6 +15,8 @@ public class EnemyCar : MonoBehaviour
     public float turnRate;
     public float patrolSpeed;
     public float chaseSpeed;
+    private float actualVelocity;
+    private float maxVelocity = 6;
 
     public Transform player;
     public Transform[] patrolRoute;
@@ -34,9 +36,10 @@ public class EnemyCar : MonoBehaviour
         targetRotation = Quaternion.identity;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-          if (circ.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()) && crash == false)
+          actualVelocity = rg2d.velocity.magnitude;
+          if (circ.IsTouching(player.GetComponent<BoxCollider2D>()) && crash == false)
             Chase();
           else
             Patrol();
@@ -48,12 +51,13 @@ public class EnemyCar : MonoBehaviour
         speed = chaseSpeed;
       targetPosition = player.transform.position;
       //Added RotateTowards to make enemy car behave like player car
-      targetRotation = Quaternion.LookRotation(Vector3.forward, targetPosition - move.position);
+      targetRotation = Quaternion.LookRotation(Vector3.forward, targetPosition);
       move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
       rg2d.velocity = move.up * speed;
-      if (box.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()))
+      if (box.IsTouching(player.GetComponent<BoxCollider2D>()))
       {
         crash = true;
+        Debug.Log("Crashed");
         StartCoroutine(WaitTime());
       }
     }
@@ -61,6 +65,11 @@ public class EnemyCar : MonoBehaviour
     void Patrol()
     {
       speed = patrolSpeed;
+      if (actualVelocity > maxVelocity)
+      {
+        speed = maxVelocity;
+        rg2d.velocity = move.up * speed;
+      }
       transform.position = Vector2.MoveTowards(transform.position, patrolRoute[patrolDestPoint].position, speed * Time.deltaTime);
       targetRotation = Quaternion.LookRotation(Vector3.forward, patrolRoute[patrolDestPoint].position - move.position);
       move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
