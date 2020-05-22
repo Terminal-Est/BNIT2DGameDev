@@ -15,19 +15,16 @@ public class EnemyCar : MonoBehaviour
     public float turnRate;
     public float patrolSpeed;
     public float chaseSpeed;
-    private float actualVelocity;
-    private float maxVelocity = 6;
 
     public Transform player;
     public Transform[] patrolRoute;
 
     private float speed;
-    private bool crash;
+    private bool spotted = false;
     private int patrolDestPoint = 0;
 
     void Start()
     {
-        crash = false;
         player = GameObject.Find("PlayerVehicle").GetComponent<Transform>();
         circ = GetComponent<CircleCollider2D>();
         move = GetComponent<Transform>();
@@ -38,38 +35,34 @@ public class EnemyCar : MonoBehaviour
 
     private void Update()
     {
-          actualVelocity = rg2d.velocity.magnitude;
-          if (circ.IsTouching(player.GetComponent<BoxCollider2D>()) && crash == false)
+          if (circ.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()))
+          {
+            Debug.Log("Spotted");
+            spotted = true;
+          }
+          if (spotted == true)
             Chase();
           else
-            Patrol();
+          {
+             Debug.Log("Searching");
+             Patrol();
+          }
     }
 
     void Chase()
     {
-      if (crash == false)
-        speed = chaseSpeed;
-      targetPosition = player.transform.position;
+      targetPosition = GameObject.Find("PlayerVehicle").transform.position;
       //Added RotateTowards to make enemy car behave like player car
       targetRotation = Quaternion.LookRotation(Vector3.forward, targetPosition);
       move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
       rg2d.velocity = move.up * speed;
-      if (box.IsTouching(player.GetComponent<BoxCollider2D>()))
-      {
-        crash = true;
-        Debug.Log("Crashed");
+      if (box.IsTouching(GameObject.Find("PlayerVehicle").GetComponent<BoxCollider2D>()))
         StartCoroutine(WaitTime());
-      }
     }
 
     void Patrol()
     {
       speed = patrolSpeed;
-      if (actualVelocity > maxVelocity)
-      {
-        speed = maxVelocity;
-        rg2d.velocity = move.up * speed;
-      }
       transform.position = Vector2.MoveTowards(transform.position, patrolRoute[patrolDestPoint].position, speed * Time.deltaTime);
       targetRotation = Quaternion.LookRotation(Vector3.forward, patrolRoute[patrolDestPoint].position - move.position);
       move.rotation = Quaternion.RotateTowards(move.rotation, targetRotation, turnRate);
@@ -85,6 +78,5 @@ public class EnemyCar : MonoBehaviour
     {
       speed = 0;
       yield return new WaitForSeconds(2);
-      crash = false;
     }
 }

@@ -21,6 +21,8 @@ public class UIHealthBar : MonoBehaviour
   void Update()
   {
       health = PlayerStats.playerHealth;
+      if (health <= 0)
+        health = 0;
       healthScaled = health / 100;
       scaleChange = new Vector3(healthScaled, 1f);
       tf.localScale = scaleChange;

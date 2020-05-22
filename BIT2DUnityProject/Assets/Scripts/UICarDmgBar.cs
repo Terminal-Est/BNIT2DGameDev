@@ -21,6 +21,8 @@ public class UICarDmgBar : MonoBehaviour
   void Update()
   {
       damage = PlayerStats.vehicleDamage;
+      if (damage >= 100)
+        damage = 100;
       damageScaled = damage / 100;
       scaleChange = new Vector3(damageScaled, 1f);
       tf.localScale = scaleChange;
