@@ -9,7 +9,10 @@ public class Enemy : MonoBehaviour
   private int patrolDestPoint = 0;
 
   public float speed;
+  public float agroRange;
   private Animator animator;
+
+  public Transform castPoint;
   public Transform player;
   public Transform[] patrolRoute;
     // Start is called before the first frame update
@@ -18,19 +21,26 @@ public class Enemy : MonoBehaviour
       animator = GetComponent<Animator>();
       reloading = false;
       player = GameObject.Find("Player").GetComponent<Transform>();
+      castPoint = GameObject.Find("CastPoint").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-      Patrol();
+      if(CanSeePlayer(agroRange))
+        Shoot();
+      else
+        Patrol();
     }
 
     void Shoot()
     {
       animator.SetInteger("enemyBehaviour", 1);
       if (reloading == false)
+      {
         Debug.Log("Pew Pew");
+        reloading = true;
+      }
       else
         StartCoroutine(ReloadTime());
     }
@@ -58,6 +68,33 @@ public class Enemy : MonoBehaviour
       }
     }
 
+    bool CanSeePlayer(float distance)
+    {
+      bool spotted = false;
+      float castDist = distance;
+
+      if (!facingRight)
+      {
+        castDist = -distance;
+      }
+
+      Vector2 lineOfSight = castPoint.position + Vector3.right * castDist;
+
+      RaycastHit2D hit = Physics2D.Linecast(castPoint.position, lineOfSight, 1 << LayerMask.NameToLayer("Action"));
+
+      if (hit.collider != null)
+      {
+        if (hit.collider.gameObject.CompareTag("Player"))
+          spotted = true;
+        else
+          spotted = false;
+        Debug.DrawLine(castPoint.position, hit.point, Color.red);
+      }
+      else
+        Debug.DrawLine(castPoint.position, lineOfSight, Color.green);
+      return spotted;
+    }
+
     IEnumerator WaitTime()
     {
       yield return new WaitForSeconds(4);
@@ -65,6 +102,8 @@ public class Enemy : MonoBehaviour
 
     IEnumerator ReloadTime()
     {
+      reloading = true;
+      animator.SetInteger("enemyBehaviour", 2);
       yield return new WaitForSeconds(2);
       reloading = false;
     }

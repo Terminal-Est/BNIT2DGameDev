@@ -78,7 +78,7 @@ public class CarDrive: MonoBehaviour {
             // value, the driveSpeed variable and our fixed FixedUpdate delta (time between updates)
             // and multiply them together to get an x, y force.
             rg2d.AddRelativeForce(Vector3.up * driveSpeed * Time.fixedDeltaTime);
-            PlayerStats.fuel -= driveSpeed / 5000;
+            PlayerStats.fuel -= driveSpeed / 4000;
             // Calculate drift
             // Get a right angle compared to the current rotational velocity
             if (rg2d.angularVelocity > 0)
