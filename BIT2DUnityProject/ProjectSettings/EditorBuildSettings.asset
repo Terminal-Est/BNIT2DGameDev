@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 06a68ee94e372434c9f451caa8e6520d
+  - enabled: 1
+    path: Assets/Scenes/Garage.unity
+    guid: b208f72f36624b542b9ef664a79969b1
+  - enabled: 1
+    path: Assets/Scenes/Level1Car.unity
+    guid: 89e75b16f3cef6242a33a859e52e5f16
+  - enabled: 1
+    path: Assets/Scenes/Transition.unity
+    guid: 5e2ce4a151c919143b47ac55e4b5f9a8
+  - enabled: 1
+    path: Assets/Scenes/Level1Player.unity
+    guid: e6569983bc891684497db725f7a56d27
+  - enabled: 1
+    path: Assets/Scenes/GameOverCarDestroyed.unity
+    guid: 37f258bed42721343bef19232eff5571
+  - enabled: 1
+    path: Assets/Scenes/GameOverCarFuel.unity
+    guid: 433622aeb4952ab4cbb8a6c418a35ef8
+  - enabled: 1
+    path: Assets/Scenes/GameOverPlayer.unity
+    guid: 29bf286dcb7f84840af34b6153be931d
   m_configObjects: {}
