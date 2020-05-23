@@ -5,23 +5,26 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
   private bool facingRight = true;
-  private bool reloading;
   private int patrolDestPoint = 0;
 
   public float speed;
+  public bool reloading = false;
   public float agroRange;
   private Animator animator;
 
+  public Transform projectile;
   public Transform castPoint;
+  public Transform firePoint;
   public Transform player;
   public Transform[] patrolRoute;
     // Start is called before the first frame update
     void Start()
     {
       animator = GetComponent<Animator>();
-      reloading = false;
+      projectile = GameObject.Find("Bullet").GetComponent<Transform>();
       player = GameObject.Find("Player").GetComponent<Transform>();
       castPoint = GameObject.Find("CastPoint").GetComponent<Transform>();
+      firePoint = GameObject.Find("CastPoint").GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -36,13 +39,12 @@ public class Enemy : MonoBehaviour
     void Shoot()
     {
       animator.SetInteger("enemyBehaviour", 1);
-      if (reloading == false)
+      if (!reloading)
       {
-        Debug.Log("Pew Pew");
+        Instantiate(projectile, firePoint.position, transform.rotation);
         reloading = true;
+        StartCoroutine(Reload());
       }
-      else
-        StartCoroutine(ReloadTime());
     }
 
     void Patrol()
@@ -51,7 +53,6 @@ public class Enemy : MonoBehaviour
       animator.SetInteger("enemyBehaviour", 0);
       if (Vector2.Distance(transform.position, patrolRoute[patrolDestPoint].position) < 0.2f)
       {
-          StartCoroutine(WaitTime());
           patrolDestPoint++;
           if (patrolDestPoint >= patrolRoute.Length)
             patrolDestPoint = 0;
@@ -100,11 +101,9 @@ public class Enemy : MonoBehaviour
       yield return new WaitForSeconds(4);
     }
 
-    IEnumerator ReloadTime()
+    IEnumerator Reload()
     {
-      reloading = true;
-      animator.SetInteger("enemyBehaviour", 2);
-      yield return new WaitForSeconds(2);
+      yield return new WaitForSeconds(0.583f);
       reloading = false;
     }
 }
