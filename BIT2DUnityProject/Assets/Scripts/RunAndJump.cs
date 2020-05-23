@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RunAndJump: MonoBehaviour {
 
+<<<<<<< Updated upstream
     Animator animator;
     Rigidbody2D rg2d;
     PolygonCollider2D collide;
@@ -12,6 +13,13 @@ public class RunAndJump: MonoBehaviour {
     int persInt;
     bool isGrounded;
     float vector;
+=======
+    public int maxJumpCount;
+    public float runSpeed;
+    public float jumpForce;
+    public float jumpForceDivider;
+    public static bool axisUp;
+>>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +29,18 @@ public class RunAndJump: MonoBehaviour {
         collide = GetComponent<PolygonCollider2D>();
         isGrounded = true;
     }   
+
+    private void FixedUpdate()
+    {
+        if (Input.GetAxis("Vertical") > 0.1)
+        {
+            axisUp = true;
+        }
+        else
+        {
+            axisUp = false;
+        }
+    }
 
     // Update is called once per frame
     void Update()
