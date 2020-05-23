@@ -9,6 +9,7 @@ public class RunAndJump: MonoBehaviour {
     public float runSpeed;
     public float jumpForce;
     public float jumpForceDivider;
+    public static bool axisUp;
 
     private Animator animator;
     private Rigidbody2D rg2d;
@@ -27,6 +28,14 @@ public class RunAndJump: MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+      if (Input.GetAxis("Vertical") > 0.1)
+      {
+            axisUp = true;
+      } else
+      {
+            axisUp = false;
+      }
 
       if (PlayerStats.playerHealth > 0)
       {
@@ -88,4 +97,4 @@ public class RunAndJump: MonoBehaviour {
       facingRight = !facingRight; //inverse
       transform.Rotate(0f, 180f, 0f);
     }
-        }
+}
