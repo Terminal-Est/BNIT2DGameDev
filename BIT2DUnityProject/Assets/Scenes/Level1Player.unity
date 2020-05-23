@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 39582649}
   - component: {fileID: 39582650}
+  - component: {fileID: 39582651}
   m_Layer: 0
   m_Name: cloud-big (1)
   m_TagString: Untagged
@@ -180,17 +181,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &39582651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39582648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &41090763
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41090764}
   - component: {fileID: 41090765}
+  - component: {fileID: 41090766}
   m_Layer: 0
   m_Name: cloud-big (7)
   m_TagString: Untagged
@@ -259,17 +274,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &41090766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41090763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &55135786
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72488450}
   - component: {fileID: 72488451}
+  - component: {fileID: 72488452}
   m_Layer: 0
   m_Name: cloud-big (8)
   m_TagString: Untagged
@@ -709,17 +738,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &72488452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72488449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &72677853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,7 +1172,7 @@ Transform:
   - {fileID: 2021505684}
   - {fileID: 2068936701}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &112862798
 GameObject:
@@ -2333,7 +2375,7 @@ RectTransform:
   - {fileID: 1425852058}
   - {fileID: 592495168}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2587,7 +2629,7 @@ Transform:
   - {fileID: 1953061545}
   - {fileID: 680388213}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &252185887
 GameObject:
@@ -3433,7 +3475,7 @@ Transform:
   m_LocalScale: {x: 2.8077185, y: 5.099733, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &306775912
 GameObject:
@@ -4486,6 +4528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416480768}
   - component: {fileID: 416480769}
+  - component: {fileID: 416480770}
   m_Layer: 0
   m_Name: cloud-big (9)
   m_TagString: Untagged
@@ -4544,17 +4587,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &416480770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416480767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &424027789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4693,7 +4749,7 @@ RectTransform:
   - {fileID: 1352730299}
   - {fileID: 113567944}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4908,7 +4964,7 @@ Transform:
   - {fileID: 1333484778}
   - {fileID: 599093431}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457581356
 GameObject:
@@ -6065,7 +6121,7 @@ Transform:
   - {fileID: 416480768}
   - {fileID: 1378994995}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554833476
 GameObject:
@@ -7865,10 +7921,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727719956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5450764, y: -0.122881725, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.49, y: -0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1252030118}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9230,7 +9287,7 @@ RectTransform:
   - {fileID: 272484020}
   - {fileID: 1090061682}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9715,7 +9772,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905036490}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.839114, y: -1.9090649, z: 0.032210052}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10502,7 +10559,7 @@ Transform:
   - {fileID: 360320722}
   - {fileID: 905036494}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1090061681
 GameObject:
@@ -10610,7 +10667,7 @@ Transform:
   - {fileID: 894874868}
   - {fileID: 1171970330}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1095546083
 BoxCollider2D:
@@ -11154,6 +11211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1119927293}
   - component: {fileID: 1119927294}
+  - component: {fileID: 1119927295}
   m_Layer: 0
   m_Name: cloud-big (4)
   m_TagString: Untagged
@@ -11212,17 +11270,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1119927295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119927292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &1128004968
 GameObject:
   m_ObjectHideFlags: 0
@@ -12236,7 +12307,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1245608588}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c9dd68755d1691b46a8f7d899f63d085, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -12307,11 +12378,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252030117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.707, y: 0, z: 0.08506822}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08506822}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 727719958}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289902088
 GameObject:
@@ -13033,6 +13104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378994995}
   - component: {fileID: 1378994996}
+  - component: {fileID: 1378994997}
   m_Layer: 0
   m_Name: cloud-big (10)
   m_TagString: Untagged
@@ -13091,17 +13163,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1378994997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1378994994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &1383459518
 GameObject:
   m_ObjectHideFlags: 0
@@ -14333,7 +14418,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1517733195
 BoxCollider2D:
@@ -14700,6 +14785,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1536275795}
   - component: {fileID: 1536275796}
+  - component: {fileID: 1536275797}
   m_Layer: 0
   m_Name: cloud-big (2)
   m_TagString: Untagged
@@ -14758,17 +14844,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1536275797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536275794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &1536361719
 GameObject:
   m_ObjectHideFlags: 0
@@ -15591,6 +15690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588232373}
   - component: {fileID: 1588232374}
+  - component: {fileID: 1588232375}
   m_Layer: 0
   m_Name: cloud-big (3)
   m_TagString: Untagged
@@ -15649,17 +15749,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1588232375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588232372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &1613847300
 GameObject:
   m_ObjectHideFlags: 0
@@ -15826,6 +15939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1629373573}
   - component: {fileID: 1629373574}
+  - component: {fileID: 1629373575}
   m_Layer: 0
   m_Name: cloud-big (5)
   m_TagString: Untagged
@@ -15884,17 +15998,30 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1629373575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629373572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &1700491442
 GameObject:
   m_ObjectHideFlags: 0
@@ -18861,7 +18988,7 @@ Transform:
   - {fileID: 2021188248}
   - {fileID: 1156009048}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041024633
 GameObject:
@@ -18873,6 +19000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2041024635}
   - component: {fileID: 2041024634}
+  - component: {fileID: 2041024636}
   m_Layer: 0
   m_Name: cloud-big
   m_TagString: Untagged
@@ -18917,12 +19045,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -18942,6 +19070,19 @@ Transform:
   m_Father: {fileID: 552543652}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2041024636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041024633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
 --- !u!1 &2047586326
 GameObject:
   m_ObjectHideFlags: 0
@@ -19845,6 +19986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138575890}
   - component: {fileID: 2138575891}
+  - component: {fileID: 2138575892}
   m_Layer: 0
   m_Name: cloud-big (6)
   m_TagString: Untagged
@@ -19903,14 +20045,27 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5d26344889f097d46914d1ab385d1023, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f0f4be837e242fb4684f1acc94364b3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 18.89, y: 10.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2138575892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138575889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05454db2e8c6b444a2a85d9955613ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffectMultiplier: {x: 0.2, y: 0.2}
