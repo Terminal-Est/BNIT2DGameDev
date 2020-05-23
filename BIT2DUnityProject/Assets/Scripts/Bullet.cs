@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public float speed = 8f;
+    public float speed = 7f;
     public int damage = 20;
-    private Rigidbody2D rb;
-
-
+    public Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
-
+      rb.velocity = transform.right * speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x + (speed * Time.deltaTime), transform.position.y, transform.position.z);
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+      if (collision.gameObject.tag == "Player")
+        PlayerStats.playerHealth -= damage;
+      Destroy(gameObject);
     }
 }

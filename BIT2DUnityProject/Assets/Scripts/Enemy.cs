@@ -41,7 +41,7 @@ public class Enemy : MonoBehaviour
       animator.SetInteger("enemyBehaviour", 1);
       if (!reloading)
       {
-        Instantiate(projectile, firePoint.position, transform.rotation);
+        Instantiate(projectile, firePoint.position, firePoint.rotation);
         reloading = true;
         StartCoroutine(Reload());
       }

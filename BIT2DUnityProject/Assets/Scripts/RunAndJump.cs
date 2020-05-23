@@ -44,6 +44,8 @@ public class RunAndJump: MonoBehaviour {
         Move();
         Jump();
       }
+      else
+        FindObjectOfType<GameHandler>().GameOver();
     }
 
     // Method For jump, check for jump key down
@@ -84,7 +86,10 @@ public class RunAndJump: MonoBehaviour {
         {
             PlayerStats.playerHealth -= 50;
             if (PlayerStats.playerHealth <= 0)
+            {
+              Die();
               FindObjectOfType<GameHandler>().GameOver();
+            }
             else
               player.transform.position = new Vector2(-3.644f, -0.767f);
         }
@@ -92,8 +97,14 @@ public class RunAndJump: MonoBehaviour {
           FindObjectOfType<GameHandler>().LoadMissionCompleteMenu();
     }
 
+    void Die()
+    {
+      Debug.Log("Dead");
+    }
+
     // Method for flipping character animation
-    private void FlipCharacter(){
+    private void FlipCharacter()
+    {
       facingRight = !facingRight; //inverse
       transform.Rotate(0f, 180f, 0f);
     }
