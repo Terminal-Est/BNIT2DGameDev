@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class IceScript : MonoBehaviour
 {
-    // public gameObject[] enemies;
-    // public gameObject[] dodgySurfaces;
 
-    // void Start()
-    // {
-    //   enemies = GetComponent<gameObject>();
-    //   dodgySurfaces = GetComponent<gameObject>();
-    // }
+   void Start()
+   {
 
-    // void Update()
-    // {
-    //   Physics2D.IgnoreCollision(collider2D, collider2D);
-    // }
+   }
+
+   void Update()
+   {
+     Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GetComponent<Collider2D>());
+   }
 
 }
