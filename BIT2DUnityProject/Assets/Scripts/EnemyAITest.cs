@@ -113,16 +113,17 @@ public class EnemyAITest : MonoBehaviour
       }
     }
 
-    void OnTriggerEnter2D(Collider2D player)
+    void OnTriggerEnter2D(Collider2D discovery)
     {
-      if (player.name == "PlayerVehicle")
+      if (discovery.name == "PlayerVehicle")
         spotted = true;
+
     }
 
-    void OnTriggerExit2D(Collider2D player)
+    void OnTriggerExit2D(Collider2D discovery)
     {
       int closestPoint = 0;
-      if (player.name == "PlayerVehicle")
+      if (discovery.name == "PlayerVehicle")
       {
         spotted = false;
         for (int i = 0; i <= patrolPoint; i++)

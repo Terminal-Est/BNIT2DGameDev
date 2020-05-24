@@ -217,7 +217,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint18
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 17327037}
   - component: {fileID: 17327040}
   m_Layer: 9
-  m_Name: BuildingCollider17
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +367,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint13
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 24095079}
   m_Layer: 0
   m_Name: Ice (4)
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -656,7 +656,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint13
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -686,7 +686,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint15
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -717,7 +717,7 @@ GameObject:
   - component: {fileID: 43554015}
   - component: {fileID: 43554018}
   m_Layer: 9
-  m_Name: BuildingCollider12
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -836,7 +836,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint7
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 69017171}
   - component: {fileID: 69017174}
   m_Layer: 9
-  m_Name: BuildingCollider42
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1038,7 +1038,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint3
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1068,7 +1068,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint12
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 96802504}
   - component: {fileID: 96802507}
   m_Layer: 9
-  m_Name: BuildingCollider14
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1218,7 +1218,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint10
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1249,7 +1249,7 @@ GameObject:
   - component: {fileID: 112097619}
   - component: {fileID: 112097622}
   m_Layer: 9
-  m_Name: BuildingCollider3
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 119234304}
   - component: {fileID: 119234307}
   m_Layer: 9
-  m_Name: BuildingCollider32
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1488,7 +1488,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint7
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1644,7 +1644,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 20
 --- !u!61 &127692149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1793,7 +1793,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint12
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1824,7 +1824,7 @@ GameObject:
   - component: {fileID: 140894801}
   - component: {fileID: 140894804}
   m_Layer: 9
-  m_Name: BuildingCollider4
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1943,7 +1943,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint11
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1973,7 +1973,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint19
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2003,7 +2003,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint18
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2033,7 +2033,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint8
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2063,7 +2063,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint14
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2282,7 +2282,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint6
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2468,7 +2468,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint18
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2499,7 +2499,7 @@ GameObject:
   - component: {fileID: 219915059}
   - component: {fileID: 219915062}
   m_Layer: 9
-  m_Name: BuildingCollider35
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2656,7 +2656,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint2
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2686,8 +2686,11 @@ GameObject:
   - component: {fileID: 242871732}
   - component: {fileID: 242871731}
   - component: {fileID: 242871733}
+  - component: {fileID: 242871737}
+  - component: {fileID: 242871736}
+  - component: {fileID: 242871734}
   m_Layer: 9
-  m_Name: BuildingCollider22
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2775,6 +2778,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0, y: 0}
+--- !u!66 &242871734
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242871730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 242871736}
+    m_ColliderPaths:
+    - - X: 143568240
+        Y: 144250672
+      - X: 21442158
+        Y: 144250672
+      - X: 21442158
+        Y: -144250672
+      - X: 143568240
+        Y: -144250672
+  - m_Collider: {fileID: 242871737}
+    m_ColliderPaths:
+    - - X: 21442108
+        Y: 144250672
+      - X: -143971744
+        Y: 144250672
+      - X: -143971744
+        Y: 22311434
+      - X: 21442108
+        Y: 22311434
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 14.356824, y: 14.425067}
+      - {x: 2.1442158, y: 14.425067}
+      - {x: 2.1442158, y: -14.425067}
+      - {x: 14.356824, y: -14.425067}
+    - - {x: 2.1442108, y: 14.425067}
+      - {x: -14.397175, y: 14.425067}
+      - {x: -14.397175, y: 2.2311435}
+      - {x: 2.1442108, y: 2.2311435}
+  m_VertexDistance: 0.0005
 --- !u!4 &242871735
 Transform:
   m_ObjectHideFlags: 0
@@ -2789,6 +2841,58 @@ Transform:
   m_Father: {fileID: 461541199}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &242871736
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242871730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 3.9226654, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.69, y: 13.68}
+    newSize: {x: 13.69, y: 13.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.806419, y: 13.68}
+  m_EdgeRadius: 0
+--- !u!61 &242871737
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242871730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: -2.9128027, y: 3.9489758}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.69, y: 13.68}
+    newSize: {x: 13.69, y: 13.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.8645124, y: 5.7820487}
+  m_EdgeRadius: 0
 --- !u!1 &265224642
 GameObject:
   m_ObjectHideFlags: 0
@@ -2802,7 +2906,7 @@ GameObject:
   - component: {fileID: 265224643}
   - component: {fileID: 265224646}
   m_Layer: 9
-  m_Name: BuildingCollider40
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3186,7 +3290,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint5
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3217,7 +3321,7 @@ GameObject:
   - component: {fileID: 308239172}
   - component: {fileID: 308239175}
   m_Layer: 9
-  m_Name: BuildingCollider11
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3336,7 +3440,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint4
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3367,7 +3471,7 @@ GameObject:
   - component: {fileID: 340421968}
   - component: {fileID: 340421971}
   m_Layer: 9
-  m_Name: BuildingCollider21
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3632,7 +3736,7 @@ GameObject:
   - component: {fileID: 341615258}
   - component: {fileID: 341615261}
   m_Layer: 9
-  m_Name: BuildingCollider38
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3751,7 +3855,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint8
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3782,7 +3886,7 @@ GameObject:
   - component: {fileID: 344119678}
   - component: {fileID: 344119681}
   m_Layer: 9
-  m_Name: BuildingCollider28
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3901,7 +4005,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint5
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -3932,7 +4036,7 @@ GameObject:
   - component: {fileID: 360826937}
   - component: {fileID: 360826940}
   m_Layer: 9
-  m_Name: BuildingCollider19
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4051,7 +4155,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint11
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4167,7 +4271,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint14
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4324,7 +4428,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint13
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4453,8 +4557,12 @@ GameObject:
   - component: {fileID: 410571789}
   - component: {fileID: 410571788}
   - component: {fileID: 410571790}
+  - component: {fileID: 410571795}
+  - component: {fileID: 410571794}
+  - component: {fileID: 410571792}
+  - component: {fileID: 410571791}
   m_Layer: 9
-  m_Name: BuildingCollider43
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4542,6 +4650,95 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0, y: 0}
+--- !u!66 &410571791
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410571787}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 410571794}
+    m_ColliderPaths:
+    - - X: 22038014
+        Y: -4849278
+      - X: -21955140
+        Y: -4849278
+      - X: -21955140
+        Y: -61456036
+      - X: 22038014
+        Y: -61456036
+  - m_Collider: {fileID: 410571792}
+    m_ColliderPaths:
+    - - X: 144533696
+        Y: 61217924
+      - X: 22037992
+        Y: 61217924
+      - X: 22037992
+        Y: -61456028
+      - X: 144533696
+        Y: -61456028
+  - m_Collider: {fileID: 410571795}
+    m_ColliderPaths:
+    - - X: -21952102
+        Y: 61104976
+      - X: -144526112
+        Y: 61104976
+      - X: -144526112
+        Y: -61456028
+      - X: -21952102
+        Y: -61456028
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 2.2038014, y: -6.1456027}
+      - {x: 14.45337, y: -6.1456027}
+      - {x: 14.45337, y: 6.1217923}
+      - {x: 2.2037992, y: 6.1217923}
+      - {x: 2.2037992, y: -0.4849278}
+      - {x: -2.1952102, y: -0.4849278}
+      - {x: -2.1952102, y: 6.1104975}
+      - {x: -14.452611, y: 6.1104975}
+      - {x: -14.452611, y: -6.1456027}
+      - {x: -2.195514, y: -6.1456027}
+      - {x: -2.195514, y: -6.1456037}
+      - {x: 2.2038014, y: -6.1456037}
+  m_VertexDistance: 0.0005
+--- !u!61 &410571792
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410571787}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 3.935333, y: -0.005637169}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.669999, y: 5.82}
+    newSize: {x: 13.669999, y: 5.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.788035, y: 5.8087254}
+  m_EdgeRadius: 0
 --- !u!4 &410571793
 Transform:
   m_ObjectHideFlags: 0
@@ -4556,6 +4753,58 @@ Transform:
   m_Father: {fileID: 461541199}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &410571794
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410571787}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0.0019578934, y: -1.5698091}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.669999, y: 5.82}
+    newSize: {x: 13.669999, y: 5.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0787172, y: 2.6803825}
+  m_EdgeRadius: 0
+--- !u!61 &410571795
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410571787}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: -3.9331248, y: -0.008311272}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.669999, y: 5.82}
+    newSize: {x: 13.669999, y: 5.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.791735, y: 5.803377}
+  m_EdgeRadius: 0
 --- !u!1 &416045167
 GameObject:
   m_ObjectHideFlags: 0
@@ -4891,7 +5140,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint17
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4921,7 +5170,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint4
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4952,7 +5201,7 @@ GameObject:
   - component: {fileID: 436476867}
   - component: {fileID: 436476870}
   m_Layer: 9
-  m_Name: BuildingCollider41
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5071,7 +5320,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint5
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5101,7 +5350,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint15
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5131,7 +5380,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint21
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5159,7 +5408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461541199}
   m_Layer: 9
-  m_Name: BuildingColliders
+  m_Name: Buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5173,7 +5422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461541198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.368641, y: 3.2558908, z: -0.42073774}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1947761845}
@@ -5221,8 +5470,8 @@ Transform:
   - {fileID: 69017172}
   - {fileID: 410571793}
   - {fileID: 2035043029}
-  m_Father: {fileID: 1647776006}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &475513695
 GameObject:
@@ -5236,7 +5485,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint9
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5470,7 +5719,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint3
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5533,7 +5782,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint10
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5564,7 +5813,7 @@ GameObject:
   - component: {fileID: 516405850}
   - component: {fileID: 516405853}
   m_Layer: 9
-  m_Name: BuildingCollider15
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5784,7 +6033,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint6
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5814,7 +6063,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint10
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5844,7 +6093,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint8
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -5953,7 +6202,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint17
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6018,7 +6267,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint1
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6048,7 +6297,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint6
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6079,7 +6328,7 @@ GameObject:
   - component: {fileID: 655963426}
   - component: {fileID: 655963429}
   m_Layer: 9
-  m_Name: BuildingCollider25
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6198,7 +6447,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint4
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6229,7 +6478,7 @@ GameObject:
   - component: {fileID: 676800960}
   - component: {fileID: 676800963}
   m_Layer: 9
-  m_Name: BuildingCollider37
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6348,7 +6597,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint11
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6438,7 +6687,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 20
 --- !u!61 &678774821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6591,7 +6840,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint16
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6621,7 +6870,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint2
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6744,7 +6993,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint12
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -6774,7 +7023,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint8
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7196,7 +7445,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 20
 --- !u!61 &833076146
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7350,7 +7599,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint8
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7616,7 +7865,7 @@ GameObject:
   - component: {fileID: 840084861}
   - component: {fileID: 840084864}
   m_Layer: 9
-  m_Name: BuildingCollider8
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7735,7 +7984,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint16
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7765,7 +8014,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint9
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7796,7 +8045,7 @@ GameObject:
   - component: {fileID: 873967046}
   - component: {fileID: 873967049}
   m_Layer: 9
-  m_Name: BuildingCollider7
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7915,7 +8164,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint11
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8071,7 +8320,7 @@ GameObject:
   - component: {fileID: 890919444}
   - component: {fileID: 890919447}
   m_Layer: 9
-  m_Name: BuildingCollider27
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8191,7 +8440,7 @@ GameObject:
   - component: {fileID: 899009519}
   - component: {fileID: 899009522}
   m_Layer: 9
-  m_Name: BuildingCollider34
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8310,7 +8559,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint9
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8341,7 +8590,7 @@ GameObject:
   - component: {fileID: 909141992}
   - component: {fileID: 909141995}
   m_Layer: 9
-  m_Name: BuildingCollider9
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8504,7 +8753,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint20
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8572,7 +8821,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint16
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8602,7 +8851,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint19
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -8633,7 +8882,7 @@ GameObject:
   - component: {fileID: 965472575}
   - component: {fileID: 965472578}
   m_Layer: 9
-  m_Name: BuildingCollider6
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8752,7 +9001,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint2
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9102,7 +9351,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint17
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9192,7 +9441,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 20
 --- !u!61 &1055272715
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9343,7 +9592,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint18
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9373,7 +9622,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint20
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9403,7 +9652,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint10
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -9434,7 +9683,7 @@ GameObject:
   - component: {fileID: 1090228348}
   - component: {fileID: 1090228351}
   m_Layer: 9
-  m_Name: BuildingCollider2
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10158,7 +10407,7 @@ GameObject:
   - component: {fileID: 1128134583}
   - component: {fileID: 1128134586}
   m_Layer: 9
-  m_Name: BuildingCollider29
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10558,7 +10807,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint23
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10588,7 +10837,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint6
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -10619,7 +10868,7 @@ GameObject:
   - component: {fileID: 1166944649}
   - component: {fileID: 1166944652}
   m_Layer: 9
-  m_Name: BuildingCollider1
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10739,7 +10988,7 @@ GameObject:
   - component: {fileID: 1177178892}
   - component: {fileID: 1177178895}
   m_Layer: 9
-  m_Name: BuildingCollider31
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10861,7 +11110,7 @@ GameObject:
   - component: {fileID: 1184713773}
   m_Layer: 0
   m_Name: Ice (5)
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10998,7 +11247,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint3
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11028,7 +11277,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint15
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11058,7 +11307,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint4
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11091,7 +11340,7 @@ GameObject:
   - component: {fileID: 1218213847}
   m_Layer: 0
   m_Name: Ice (2)
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11228,7 +11477,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint14
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11337,7 +11586,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint7
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11523,7 +11772,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint1
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11679,7 +11928,7 @@ GameObject:
   - component: {fileID: 1302238758}
   - component: {fileID: 1302238761}
   m_Layer: 9
-  m_Name: BuildingCollider10
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11798,7 +12047,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint6
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11828,7 +12077,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint11
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11858,7 +12107,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint1
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11965,7 +12214,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint12
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12157,7 +12406,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 15
+  m_Radius: 20
 --- !u!114 &1341457741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12277,7 +12526,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint2
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12307,7 +12556,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint16
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12337,7 +12586,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint17
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12368,7 +12617,7 @@ GameObject:
   - component: {fileID: 1451069306}
   - component: {fileID: 1451069309}
   m_Layer: 9
-  m_Name: BuildingCollider30
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12487,7 +12736,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint1
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12517,7 +12766,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint4
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12548,7 +12797,7 @@ GameObject:
   - component: {fileID: 1491675711}
   - component: {fileID: 1491675714}
   m_Layer: 9
-  m_Name: BuildingCollider20
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12667,7 +12916,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint7
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12912,7 +13161,7 @@ GameObject:
   - component: {fileID: 1526870491}
   - component: {fileID: 1526870494}
   m_Layer: 9
-  m_Name: BuildingCollider16
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13242,8 +13491,12 @@ GameObject:
   - component: {fileID: 1582463715}
   - component: {fileID: 1582463711}
   - component: {fileID: 1582463712}
+  - component: {fileID: 1582463717}
+  - component: {fileID: 1582463716}
+  - component: {fileID: 1582463714}
+  - component: {fileID: 1582463713}
   m_Layer: 9
-  m_Name: BuildingCollider5
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13310,6 +13563,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0, y: 0}
+--- !u!66 &1582463713
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582463710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1582463716}
+    m_ColliderPaths:
+    - - X: 140342384
+        Y: 57442240
+      - X: -21157220
+        Y: 57442240
+      - X: -21157220
+        Y: -113040
+      - X: 140342384
+        Y: -113040
+  - m_Collider: {fileID: 1582463717}
+    m_ColliderPaths:
+    - - X: -21157122
+        Y: 57442244
+      - X: -140136496
+        Y: 57442244
+      - X: -140136496
+        Y: -57442244
+      - X: -21157122
+        Y: -57442244
+  m_CompositePaths:
+    m_Paths:
+    - - {x: -2.1157122, y: -0.011304}
+      - {x: 14.034239, y: -0.011304}
+      - {x: 14.034239, y: 5.744224}
+      - {x: -2.1157122, y: 5.744224}
+      - {x: -2.1157122, y: 5.7442245}
+      - {x: -14.01365, y: 5.7442245}
+      - {x: -14.01365, y: -5.7442245}
+      - {x: -2.1157122, y: -5.7442245}
+  m_VertexDistance: 0.0005
+--- !u!50 &1582463714
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582463710}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!4 &1582463715
 Transform:
   m_ObjectHideFlags: 0
@@ -13324,6 +13647,58 @@ Transform:
   m_Father: {fileID: 461541199}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1582463716
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582463710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 2.8969402, y: 1.4521366}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.69, y: 5.82}
+    newSize: {x: 13.69, y: 5.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.8508883, y: 2.9157264}
+  m_EdgeRadius: 0
+--- !u!61 &1582463717
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582463710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: -3.9204373, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 13.69, y: 5.82}
+    newSize: {x: 13.69, y: 5.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.7838764, y: 5.82}
+  m_EdgeRadius: 0
 --- !u!1 &1592901874
 GameObject:
   m_ObjectHideFlags: 0
@@ -13336,7 +13711,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint3
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13776,7 +14151,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint1
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13806,7 +14181,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint9
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -13824,37 +14199,6 @@ Transform:
   m_Father: {fileID: 1925595978}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1647776005
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1647776006}
-  m_Layer: 9
-  m_Name: Buildings
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1647776006
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647776005}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.368641, y: 3.2558908, z: -0.42073774}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 461541199}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656243504
 GameObject:
   m_ObjectHideFlags: 0
@@ -13870,7 +14214,7 @@ GameObject:
   - component: {fileID: 1656243509}
   m_Layer: 0
   m_Name: Ice
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14007,7 +14351,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint5
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14037,7 +14381,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint9
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14193,7 +14537,7 @@ GameObject:
   - component: {fileID: 1673890285}
   - component: {fileID: 1673890288}
   m_Layer: 9
-  m_Name: BuildingCollider39
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14315,7 +14659,7 @@ GameObject:
   - component: {fileID: 1676632016}
   m_Layer: 0
   m_Name: Ice (2)
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14669,7 +15013,7 @@ GameObject:
   - component: {fileID: 1697133863}
   m_Layer: 0
   m_Name: Ice (3)
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14806,7 +15150,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint7
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14837,7 +15181,7 @@ GameObject:
   - component: {fileID: 1774571705}
   - component: {fileID: 1774571708}
   m_Layer: 9
-  m_Name: BuildingCollider36
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15074,7 +15418,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint20
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15104,7 +15448,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint19
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15235,7 +15579,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint13
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15265,7 +15609,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint3
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -15296,7 +15640,7 @@ GameObject:
   - component: {fileID: 1842960040}
   - component: {fileID: 1842960043}
   m_Layer: 9
-  m_Name: BuildingCollider26
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15612,7 +15956,7 @@ GameObject:
   - component: {fileID: 1900887404}
   m_Layer: 0
   m_Name: Ice (1)
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15750,7 +16094,7 @@ GameObject:
   - component: {fileID: 1904363141}
   - component: {fileID: 1904363144}
   m_Layer: 9
-  m_Name: BuildingCollider23
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15919,7 +16263,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint22
   m_TagString: Untagged
-  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16187,7 +16531,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint21
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16217,7 +16561,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint15
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16340,7 +16684,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint14
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16370,7 +16714,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint22
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16400,7 +16744,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint12
   m_TagString: Untagged
-  m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16524,7 +16868,7 @@ GameObject:
   - component: {fileID: 2035043028}
   - component: {fileID: 2035043031}
   m_Layer: 9
-  m_Name: BuildingCollider44
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16646,7 +16990,7 @@ GameObject:
   - component: {fileID: 2037213387}
   m_Layer: 0
   m_Name: Ice
-  m_TagString: Untagged
+  m_TagString: Slippery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16783,7 +17127,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint10
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16814,7 +17158,7 @@ GameObject:
   - component: {fileID: 2056666321}
   - component: {fileID: 2056666324}
   m_Layer: 9
-  m_Name: BuildingCollider33
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16934,7 +17278,7 @@ GameObject:
   - component: {fileID: 2072068658}
   - component: {fileID: 2072068661}
   m_Layer: 9
-  m_Name: BuildingCollider13
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17053,7 +17397,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint2
   m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -17084,7 +17428,7 @@ GameObject:
   - component: {fileID: 2116471237}
   - component: {fileID: 2116471240}
   m_Layer: 9
-  m_Name: BuildingCollider24
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17360,7 +17704,7 @@ GameObject:
   - component: {fileID: 2146041747}
   - component: {fileID: 2146041750}
   m_Layer: 9
-  m_Name: BuildingCollider18
+  m_Name: Building
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17479,7 +17823,7 @@ GameObject:
   m_Layer: 0
   m_Name: patrolpoint5
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

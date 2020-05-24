@@ -15,6 +15,7 @@ TagManager:
   - Enemy
   - PlayerHP
   - Bounds
+  - Slippery
   layers:
   - Default
   - TransparentFX

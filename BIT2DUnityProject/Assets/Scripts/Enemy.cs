@@ -49,6 +49,7 @@ public class Enemy : MonoBehaviour
 
     void Patrol()
     {
+
       transform.position = Vector2.MoveTowards(transform.position, patrolRoute[patrolDestPoint].position, speed * Time.deltaTime);
       animator.SetInteger("enemyBehaviour", 0);
       if (Vector2.Distance(transform.position, patrolRoute[patrolDestPoint].position) < 0.2f)
